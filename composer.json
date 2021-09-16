@@ -1,0 +1,46 @@
+{
+    "name": "m74asoud/temptag",
+    "description": "Laravel Temporary Tag for tagging Eloquent models - store in mongodb",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "masoud nazarpoor",
+            "email": "m74asoud@gmail.com",
+            "homepage": "https://github.com/masoudnazarpoor",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "jenssegers/mongodb": "^3.8",
+        "illuminate/database": "^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "M74asoud\\TempTag\\": "src/"
+        },
+        "files" : [
+            "src/helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "M74asoud\\TempTag\\TempTagServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
